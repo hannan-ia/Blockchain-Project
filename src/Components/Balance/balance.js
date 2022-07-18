@@ -21,7 +21,7 @@ const Balance = () => {
 	};
 
 	const backToWelcome = () => {
-		navigate.push('/');
+		navigate('/');
 	};
 
 	const handleGetBalance = () => {

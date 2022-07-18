@@ -58,7 +58,7 @@ const GetBalance = () => {
 	};
 
 	const backToWelcome = () => {
-		navigate.push('/');
+		('/');
 	};
 
 	const renderRowSubComponent = useCallback(

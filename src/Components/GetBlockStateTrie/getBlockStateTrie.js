@@ -12,7 +12,7 @@ const GetBlockStateTrie = () => {
 	const [hashTransaction, setHashTransaction] = useState(null);
 
 	const backToWelcome = () => {
-		navigate.push('/');
+		navigate('/');
 	};
 
 	const sendAddress = async () => {

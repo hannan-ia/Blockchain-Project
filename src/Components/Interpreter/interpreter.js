@@ -66,7 +66,7 @@ const Interpreter = () => {
 	};
 
 	const backToWelcome = () => {
-		navigate.push('/');
+		navigate('/');
 	};
 
 	return (

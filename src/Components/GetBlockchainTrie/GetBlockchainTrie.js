@@ -11,7 +11,7 @@ const GetBlockchainTrie = () => {
 	const navigate = useNavigate();
 
 	const backToWelcome = () => {
-		navigate.push('/');
+		navigate('/');
 	};
 
 	useEffect(() => {

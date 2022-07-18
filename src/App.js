@@ -11,24 +11,34 @@ import GetBlockStateTrie from './Components/GetBlockStateTrie/getBlockStateTrie'
 import Interpreter from './Components/Interpreter/interpreter';
 import GetBlockchainTrie from './Components/GetBlockchainTrie/GetBlockchainTrie';
 
+
+
+
+//https://reactrouter.com/docs/en/v6/components/routes
 const App = () => {
 	return (
 		<div className="app">
 			<BrowserRouter>
 			<Routes>
-			    <Route exact path="/" element={WelcomePage} />
-				<Route path="/verify-transaction" element={VerifyTransaction} />
-				<Route path="/create-transaction" element={CreatingTransaction} />
-				<Route path="/get-balance" element={Balance} />
-				<Route path="/get-transactions" element={GetTransactions} />
-				<Route path="/get-block-trie" element={GetBlockTrie} />
-				<Route path="/interpreter" element={Interpreter} />
-				<Route path="/get-block-state-trie" element={GetBlockStateTrie} />
-				<Route path="/get-blockchain-trie" element={GetBlockchainTrie} />
+			    <Route exact path="/" element={<WelcomePage />} />
+				<Route path="/verify-transaction" element={<VerifyTransaction/>} />
+				<Route path="/create-transaction" element={<CreatingTransaction/>} />
+				<Route path="/get-balance" element={<Balance/>} />
+				<Route path="/get-transactions" element={<GetTransactions/>} />
+				<Route path="/get-block-trie" element={<GetBlockTrie/>} />
+				<Route path="/interpreter" element={<Interpreter/>} />
+				<Route path="/get-block-state-trie" element={<GetBlockStateTrie/>} />
+				<Route path="/get-blockchain-trie" element={<GetBlockchainTrie/>} />
 			</Routes>
 			</BrowserRouter>
 		</div>
 	);
+
 };
+
+
+
+
+
 
 export default App;

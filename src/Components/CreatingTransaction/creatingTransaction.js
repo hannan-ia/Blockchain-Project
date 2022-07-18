@@ -41,7 +41,7 @@ const CreatingTransaction = () => {
 	};
 
 	const backToWelcome = () => {
-		navigate.push('/');
+		navigate('/');
 	};
 
 	let showCreate = (

@@ -17,7 +17,7 @@ const VerifyTransaction = () => {
 	}, [hashTransaction]);
 
 	const backToWelcome = () => {
-		navigate.push('/');
+		navigate('/');
 	};
 
 	const sendData = async (e) => {
