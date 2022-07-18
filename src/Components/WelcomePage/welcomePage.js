@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Navigate } from 'react-router-dom';
 import './welcomePage.css';
 
 const WelcomePage = () => {
@@ -19,7 +19,13 @@ const WelcomePage = () => {
 			<h1>Welcome to Ben's blockchain!</h1>
 			<button
 				className="button"
-				onClick={() => navigate.push('create-transaction')}
+				onClick={() => {
+					
+					
+    navigate("/create-transaction");
+	
+					
+				}}
 				onMouseEnter={() => setIsShownButton1(true)}
 				onMouseLeave={() => setIsShownButton1(false)}
 			>
@@ -28,7 +34,7 @@ const WelcomePage = () => {
 			{isShownButton1 && <div>Creating new transaction</div>}
 			<button
 				className="button"
-				onClick={() => navigate.push('verify-transaction')}
+				onClick={() => navigate('/verify-transaction')}
 				onMouseEnter={() => setIsShownButton2(true)}
 				onMouseLeave={() => setIsShownButton2(false)}
 			>
@@ -38,7 +44,7 @@ const WelcomePage = () => {
 
 			<button
 				className="button"
-				onClick={() => navigate.push('get-balance')}
+				onClick={() => navigate('/get-balance')}
 				onMouseEnter={() => setIsShownButton3(true)}
 				onMouseLeave={() => setIsShownButton3(false)}
 			>
@@ -50,7 +56,7 @@ const WelcomePage = () => {
 
 			<button
 				className="button"
-				onClick={() => navigate.push('get-transactions')}
+				onClick={() => navigate('/get-transactions')}
 				onMouseEnter={() => setIsShownButton4(true)}
 				onMouseLeave={() => setIsShownButton4(false)}
 			>
@@ -64,7 +70,7 @@ const WelcomePage = () => {
 
 			<button
 				className="button"
-				onClick={() => navigate.push('get-block-trie')}
+				onClick={() => navigate('/get-block-trie')}
 				onMouseEnter={() => setIsShownButton5(true)}
 				onMouseLeave={() => setIsShownButton5(false)}
 			>
@@ -76,7 +82,7 @@ const WelcomePage = () => {
 
 			<button
 				className="button"
-				onClick={() => navigate.push('get-blockchain-trie')}
+				onClick={() => navigate('/get-blockchain-trie')}
 				onMouseEnter={() => setIsShownButton8(true)}
 				onMouseLeave={() => setIsShownButton8(false)}
 			>
@@ -85,7 +91,7 @@ const WelcomePage = () => {
 			{isShownButton8 && <div>To see the state's trie of all the blockchain</div>}
 			<button
 				className="button"
-				onClick={() => navigate.push('get-block-state-trie')}
+				onClick={() => navigate('/get-block-state-trie')}
 				onMouseEnter={() => setIsShownButton6(true)}
 				onMouseLeave={() => setIsShownButton6(false)}
 			>
@@ -97,7 +103,7 @@ const WelcomePage = () => {
 			<button
 				className="button"
 				onClick={() => {
-					navigate.push('interpreter');
+					navigate('/interpreter');
 				}}
 				onMouseEnter={() => setIsShownButton7(true)}
 				onMouseLeave={() => setIsShownButton7(false)}
