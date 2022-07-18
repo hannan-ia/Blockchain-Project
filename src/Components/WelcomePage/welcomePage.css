@@ -1,0 +1,24 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	background-color: #f4f5f7;
+	height: 680px;
+	align-items: center;
+	font-size: 23px;
+	color: maroon;
+}
+.button {
+	display: flex;
+	padding: 12px;
+	margin: 5px;
+	border-radius: 20px;
+	align-self: center;
+	height: 50px;
+	text-align: center;
+	font-size: 17px;
+}
+
+.background {
+	background-image: url('../../assets/bitcoin-img.jpeg');
+}

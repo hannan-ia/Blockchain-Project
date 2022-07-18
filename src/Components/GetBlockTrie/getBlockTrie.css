@@ -1,0 +1,107 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	background-color: #f4f5f7;
+	height: 680px;
+	align-items: center;
+	font-size: 23px;
+	overflow: auto;
+}
+.header {
+}
+.intro {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	color: maroon;
+}
+
+.button {
+	display: flex;
+	padding: 12px;
+	margin: 5px;
+	border-radius: 20px;
+	align-self: center;
+	height: 50px;
+	text-align: center;
+	font-size: 17px;
+}
+.label {
+	padding: 28px;
+	margin-bottom: 9px;
+}
+
+.input {
+	height: 31px;
+	margin-top: 27px;
+	border-radius: 9px;
+}
+.go-button {
+	background-color: darkcyan;
+	font-family: fantasy;
+	font-size: 33px;
+	width: 137px;
+	margin-top: 20px;
+	height: 65px;
+	display: block;
+}
+
+.backFromVerify {
+	height: 730px;
+}
+.background {
+	background-image: url('../../assets/Ethereum-840x441.jpg');
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 'center';
+}
+.active {
+	background-color: #2e4f92;
+}
+.verify {
+	font-weight: bold;
+	font-size: 18px;
+}
+.trie {
+	flex-direction: row;
+	display: flex;
+	width: 100%;
+	overflow: auto;
+}
+.sc-hKgILt {
+	width: 100%;
+}
+.node circle {
+	fill: rgb(247, 106, 214);
+	stroke: rgb(184, 37, 81);
+	stroke-width: 1.5px;
+}
+.node text {
+	font-size: 19px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	background-color: black;
+	fill: rgb(122, 4, 4);
+	overflow: auto;
+	font-weight: bold;
+}
+.node {
+	cursor: pointer;
+}
+path.link {
+	fill: none;
+	stroke: #bd9a00;
+	stroke-width: 10px;
+}
+body {
+	background-color: white;
+	overflow: auto;
+}
+span {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #f4f4f4;
+	text-shadow: 0 1px 4px black;
+	float: right;
+}
